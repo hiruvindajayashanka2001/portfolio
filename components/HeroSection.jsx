@@ -79,7 +79,7 @@ export default function HeroSection() {
         scale(1)
       `;
           }}
-        >
+        > {/* image rendering */}
           <Image
             src="/assets/my_image.png"
             alt="Hiruvinda Jayashanka"
