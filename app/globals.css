@@ -72,3 +72,14 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Staggered section-enter variants */
+.section-enter-slow {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.section-enter-slow.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
