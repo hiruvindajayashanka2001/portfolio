@@ -1,10 +1,14 @@
 import LightPillar from '../components/LightPillar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import EducationSection from '../components/EducationSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
+import portfolioData from '../public/data/portfolio.json';
 
 export default function Home() {
+  const data = portfolioData;
+
   return (
     <main className="relative min-h-screen bg-bg-main">
       {/* Fixed background */}
@@ -27,16 +31,14 @@ export default function Home() {
 
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-5 backdrop-blur-md border-b border-white/5">
-        {/* Logo */}
         <span className="font-display font-bold text-xl text-text-primary tracking-tight">
-          <span className="text-primary font-extrabold">H</span>
-          <span className="text-text-secondary font-medium">J</span>
+          <span className="text-primary font-extrabold">{data.personal.initials.first}</span>
+          <span className="text-text-secondary font-medium">{data.personal.initials.last}</span>
         </span>
 
-        {/* Nav links + icons */}
         <div className="flex items-center gap-8">
           <div className="flex gap-7 font-body text-sm text-text-secondary">
-            {['Home', 'Projects', 'About', 'Contacts'].map((item) => (
+            {data.nav.map((item) => (
               <a
                 key={item}
                 href={item === 'Home' ? '#hero' : `#${item.toLowerCase()}`}
@@ -46,16 +48,16 @@ export default function Home() {
               </a>
             ))}
           </div>
-
         </div>
       </nav>
 
       {/* Sections */}
       <div className="relative z-10">
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <ContactSection />
+        <HeroSection data={data} />
+        <AboutSection data={data} />
+        <EducationSection />
+        <ProjectsSection data={data} />
+        <ContactSection data={data} />
       </div>
     </main>
   );
