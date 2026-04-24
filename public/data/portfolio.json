@@ -1,0 +1,96 @@
+{
+  "personal": {
+    "name": "Hiruvinda Jayashanka",
+    "nameShort": "Hiruvinda",
+    "initials": { "first": "H", "last": "J" },
+    "role": "Full-Stack Developer",
+    "tagline": "I build beautiful, fast, and accessible digital experiences. Turning ideas into polished products.",
+    "location": "Colombo, Sri Lanka 🇱🇰",
+    "email": "you@example.com",
+    "avatar": "/assets/my_image.png",
+    "aboutImage": "/assets/about_me_image.png",
+    "socials": {
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "twitter": "https://twitter.com/yourusername"
+    }
+  },
+  "about": {
+    "paragraphs": [
+      "Hey! I'm a passionate developer who loves crafting elegant solutions to complex problems. I specialise in building modern web applications with a focus on performance, accessibility, and clean code.",
+      "When I'm not coding, you'll find me exploring new tech, contributing to open source, or experimenting with design. I believe great software is a mix of technical craft and creative thinking."
+    ],
+    "skills": [
+      "React", "Next.js", "TypeScript", "Node.js",
+      "PostgreSQL", "Tailwind CSS", "Docker", "Git"
+    ],
+    "stats": [
+      { "value": "3+", "label": "Years Experience" },
+      { "value": "20+", "label": "Projects Shipped" },
+      { "value": "10+", "label": "Happy Clients" }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "CollabFlow",
+      "description": "A real-time collaborative workspace that lets distributed teams plan, write, and ship together — think Notion meets Linear with live cursors.",
+      "myRole": "Led the full frontend architecture, designed the real-time sync engine using WebSockets, and built the rich-text editor from scratch. Also handled deployment pipeline on AWS.",
+      "impact": "Reduced context-switching for teams by 40%. Became the primary tool for 3 client companies within the first month of launch, handling 500+ concurrent users.",
+      "tags": ["Next.js", "WebSockets", "PostgreSQL", "Redis", "AWS"],
+      "image": "/assets/about_me_image.png",
+      "github": "https://github.com/yourusername/collabflow",
+      "live": "https://collabflow.vercel.app",
+      "accent": "#5227FF"
+    },
+    {
+      "id": 2,
+      "title": "DataLens AI",
+      "description": "An AI-powered analytics dashboard that transforms raw CSV data into interactive visualisations and natural-language insights instantly.",
+      "myRole": "Built the entire data ingestion pipeline, designed the D3.js chart components, and integrated the OpenAI API for the natural-language query feature.",
+      "impact": "Cut reporting time from hours to seconds for non-technical users. Won 1st place at the university hackathon among 60 competing teams.",
+      "tags": ["React", "Python", "FastAPI", "D3.js", "OpenAI API"],
+      "image": "/assets/about_me_image.png",
+      "github": "https://github.com/yourusername/datalens-ai",
+      "live": null,
+      "accent": "#8B5CF6"
+    },
+    {
+      "id": 3,
+      "title": "ShopWave",
+      "description": "A mobile-first e-commerce platform with a seamless checkout experience, real-time inventory management, and a merchant dashboard.",
+      "myRole": "Owned the entire checkout flow including Stripe integration, built the merchant dashboard, and optimised database queries that cut load times by 60%.",
+      "impact": "Processed over LKR 2M in transactions during a 3-month pilot. Merchant onboarding time dropped from 2 days to under 20 minutes.",
+      "tags": ["Next.js", "Stripe", "Tailwind CSS", "Prisma", "PostgreSQL"],
+      "image": "/assets/about_me_image.png",
+      "github": "https://github.com/yourusername/shopwave",
+      "live": "https://shopwave.lk",
+      "accent": "#FF9FFC"
+    },
+    {
+      "id": 4,
+      "title": "MediTrack",
+      "description": "A hospital management system for tracking patient records, appointments, and medication schedules across multiple departments.",
+      "myRole": "Designed the database schema, built the REST API, and developed the appointment scheduling module with conflict detection and SMS reminders.",
+      "impact": "Deployed at a regional clinic in Colombo, reducing appointment scheduling errors by 85% and cutting administrative overhead by half.",
+      "tags": ["Node.js", "Express", "MySQL", "React", "Twilio"],
+      "image": "/assets/about_me_image.png",
+      "github": "https://github.com/yourusername/meditrack",
+      "live": null,
+      "accent": "#06B6D4"
+    },
+    {
+      "id": 5,
+      "title": "DevPulse",
+      "description": "A developer productivity tracker that aggregates GitHub activity, commit streaks, and coding patterns into a personal performance dashboard.",
+      "myRole": "Built the GitHub OAuth integration, designed the streak and stat calculation algorithms, and created the animated dashboard UI with real-time updates.",
+      "impact": "Used by 200+ developers within 2 weeks of launch. Featured in a Sri Lankan tech newsletter, driving organic growth with zero marketing spend.",
+      "tags": ["Next.js", "GitHub API", "TypeScript", "Chart.js", "Supabase"],
+      "image": "/assets/about_me_image.png",
+      "github": "https://github.com/yourusername/devpulse",
+      "live": "https://devpulse.app",
+      "accent": "#F59E0B"
+    }
+  ],
+  "nav": ["Home", "About", "Projects", "Contacts"]
+}
