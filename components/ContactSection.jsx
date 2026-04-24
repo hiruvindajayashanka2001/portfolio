@@ -2,14 +2,13 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export default function ContactSection() {
+export default function ContactSection({ data }) {
+  const { personal } = data;
   const ref = useRef(null);
   const [copied, setCopied] = useState(false);
 
-  const email = 'you@example.com';
-
   const copyEmail = () => {
-    navigator.clipboard.writeText(email);
+    navigator.clipboard.writeText(personal.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -28,8 +27,14 @@ export default function ContactSection() {
     return () => observer.disconnect();
   }, []);
 
+  const socials = [
+    { label: 'GitHub',   href: personal.socials.github   },
+    { label: 'LinkedIn', href: personal.socials.linkedin  },
+    { label: 'Twitter',  href: personal.socials.twitter   },
+  ];
+
   return (
-    <section id="contact" className="py-32 px-6 max-w-5xl mx-auto pb-40">
+    <section id="contacts" className="py-32 px-6 max-w-5xl mx-auto pb-40">
       <div ref={ref} className="section-enter">
         <p className="font-mono text-sm text-primary mb-3 tracking-widest uppercase">
           03 — Contact
@@ -42,25 +47,19 @@ export default function ContactSection() {
           interesting collaborations. Let's talk.
         </p>
 
-        {/* Email copy */}
         <button
           onClick={copyEmail}
           className="group flex items-center gap-4 px-6 py-4 rounded-xl bg-bg-card glow-border
                      hover:border-accent/60 hover:bg-accent/10 transition-all duration-300 mb-10"
         >
-          <span className="font-mono text-text-primary text-base">{email}</span>
+          <span className="font-mono text-text-primary text-base">{personal.email}</span>
           <span className="text-xs text-text-muted font-mono bg-white/5 px-2 py-1 rounded border border-white/10 group-hover:border-accent/40 transition-colors">
             {copied ? '✓ copied' : 'copy'}
           </span>
         </button>
 
-        {/* Social links */}
         <div className="flex gap-5">
-          {[
-            { label: 'GitHub', href: 'https://github.com/yourusername' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/yourusername' },
-            { label: 'Twitter', href: 'https://twitter.com/yourusername' },
-          ].map(({ label, href }) => (
+          {socials.map(({ label, href }) => (
             <a
               key={label}
               href={href}
@@ -73,10 +72,9 @@ export default function ContactSection() {
           ))}
         </div>
 
-        {/* Footer */}
         <div className="mt-24 pt-8 border-t border-white/8">
           <p className="font-mono text-xs text-text-muted">
-            Built with Next.js · Designed & developed by Your Name · {new Date().getFullYear()}
+            Built with Next.js · Designed & developed by {personal.name} · {new Date().getFullYear()}
           </p>
         </div>
       </div>
