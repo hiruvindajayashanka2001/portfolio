@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import LightPillar from '../components/LightPillar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import SkillsSection from '../components/SkillsSection';
 import EducationSection from '../components/EducationSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
@@ -32,6 +33,13 @@ const NAV_ITEMS = [
       </svg>
     ),
   },
+  { id: 'skills',    label: 'Skills',    icon: (          
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="16 18 22 12 16 6"/>
+      <polyline points="8 6 2 12 8 18"/>
+    </svg>
+  )},
   {
     id: 'education',
     label: 'Education',
@@ -355,6 +363,7 @@ export default function Home() {
       <div className="relative z-10">
         <HeroSection data={data} />
         <AboutSection data={data} />
+        <SkillsSection />
         <EducationSection />
         <ProjectsSection data={data} />
         <ContactSection data={data} />
