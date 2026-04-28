@@ -9,6 +9,7 @@
     "audit": "npm audit --audit-level=high"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "5.15.9",
     "lenis": "1.3.23",
     "next": "16.2.2",
     "react": "18.3.1",
