@@ -5,18 +5,18 @@ import { useEffect, useRef, useState } from 'react';
 const EDUCATION = [
   {
     id: 'ol',
-    year: '2019',
+    year: '2017',
     label: 'GCE Ordinary Level',
-    school: 'Your School Name',
+    school: 'Ch/ Ananda National College, Chilaw',
     detail: 'Completed GCE O/L with strong results, building a solid academic foundation.',
     accent: '#5227FF',
   },
   {
     id: 'al',
-    year: '2022',
+    year: '2020',
     label: 'GCE Advanced Level',
-    school: 'Your School Name',
-    detail: 'Completed GCE A/L in the Physical Science stream, qualifying for university entrance.',
+    school: 'Ch/ Ananda National College, Chilaw',
+    detail: 'Completed GCE A/L in the Biological Science stream, qualifying for university entrance.',
     accent: '#A855F7',
   },
   {
@@ -24,7 +24,7 @@ const EDUCATION = [
     year: '2023 — Present',
     label: 'BSc (Hons) Information Technology',
     school: 'Sri Lanka Institute of Information Technology (SLIIT)',
-    detail: 'Specializing in Software Engineering. Currently pursuing the degree with focus on full-stack development, algorithms, and software architecture.',
+    detail: 'Specializing in Software Engineering.',
     accent: '#FF9FFC',
   },
 ];

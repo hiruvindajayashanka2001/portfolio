@@ -5,7 +5,7 @@
     "initials": { "first": "H", "last": "J" },
     "role": "Full-Stack Developer",
     "tagline": "I build beautiful, fast, and accessible digital experiences. Turning ideas into polished products.",
-    "location": "Colombo, Sri Lanka 🇱🇰",
+    "location": "Chilaw, Sri Lanka 🇱🇰",
     "email": "hiruvindajayashanka2001@gmail.com",
     "avatar": "/assets/my_image.png",
     "aboutImage": "/assets/about_me_image.png",
@@ -17,8 +17,8 @@
   },
   "about": {
     "paragraphs": [
-      "Hey! I'm a passionate developer who loves crafting elegant solutions to complex problems. I specialise in building modern web applications with a focus on performance, accessibility, and clean code.",
-      "When I'm not coding, you'll find me exploring new tech, contributing to open source, or experimenting with design. I believe great software is a mix of technical craft and creative thinking."
+      "I am a third-year Software Engineering student from SLIIT. And I have done number of projects focus on full stack development.",
+      "It is always exciting for me to learn a new technology and dive into solving problems that I have never solved before. Even when i am doing university projects i like develop features that allow me to interact and learn new things."  
     ],
     "skills": [
       "React", "Next.js", "TypeScript", "Node.js",
@@ -31,66 +31,66 @@
     ]
   },
   "projects": [
-    {
-      "id": 1,
-      "title": "CollabFlow",
-      "description": "A real-time collaborative workspace that lets distributed teams plan, write, and ship together — think Notion meets Linear with live cursors.",
-      "myRole": "Led the full frontend architecture, designed the real-time sync engine using WebSockets, and built the rich-text editor from scratch. Also handled deployment pipeline on AWS.",
-      "impact": "Reduced context-switching for teams by 40%. Became the primary tool for 3 client companies within the first month of launch, handling 500+ concurrent users.",
-      "tags": ["Next.js", "WebSockets", "PostgreSQL", "Redis", "AWS"],
-      "image": "/assets/about_me_image.png",
-      "github": "https://github.com/yourusername/collabflow",
-      "live": "https://collabflow.vercel.app",
-      "accent": "#5227FF"
-    },
-    {
-      "id": 2,
-      "title": "DataLens AI",
-      "description": "An AI-powered analytics dashboard that transforms raw CSV data into interactive visualisations and natural-language insights instantly.",
-      "myRole": "Built the entire data ingestion pipeline, designed the D3.js chart components, and integrated the OpenAI API for the natural-language query feature.",
-      "impact": "Cut reporting time from hours to seconds for non-technical users. Won 1st place at the university hackathon among 60 competing teams.",
-      "tags": ["React", "Python", "FastAPI", "D3.js", "OpenAI API"],
-      "image": "/assets/about_me_image.png",
-      "github": "https://github.com/yourusername/datalens-ai",
-      "live": null,
-      "accent": "#8B5CF6"
-    },
-    {
-      "id": 3,
-      "title": "ShopWave",
-      "description": "A mobile-first e-commerce platform with a seamless checkout experience, real-time inventory management, and a merchant dashboard.",
-      "myRole": "Owned the entire checkout flow including Stripe integration, built the merchant dashboard, and optimised database queries that cut load times by 60%.",
-      "impact": "Processed over LKR 2M in transactions during a 3-month pilot. Merchant onboarding time dropped from 2 days to under 20 minutes.",
-      "tags": ["Next.js", "Stripe", "Tailwind CSS", "Prisma", "PostgreSQL"],
-      "image": "/assets/about_me_image.png",
-      "github": "https://github.com/yourusername/shopwave",
-      "live": "https://shopwave.lk",
-      "accent": "#FF9FFC"
-    },
-    {
-      "id": 4,
-      "title": "MediTrack",
-      "description": "A hospital management system for tracking patient records, appointments, and medication schedules across multiple departments.",
-      "myRole": "Designed the database schema, built the REST API, and developed the appointment scheduling module with conflict detection and SMS reminders.",
-      "impact": "Deployed at a regional clinic in Colombo, reducing appointment scheduling errors by 85% and cutting administrative overhead by half.",
-      "tags": ["Node.js", "Express", "MySQL", "React", "Twilio"],
-      "image": "/assets/about_me_image.png",
-      "github": "https://github.com/yourusername/meditrack",
-      "live": null,
-      "accent": "#06B6D4"
-    },
-    {
-      "id": 5,
-      "title": "DevPulse",
-      "description": "A developer productivity tracker that aggregates GitHub activity, commit streaks, and coding patterns into a personal performance dashboard.",
-      "myRole": "Built the GitHub OAuth integration, designed the streak and stat calculation algorithms, and created the animated dashboard UI with real-time updates.",
-      "impact": "Used by 200+ developers within 2 weeks of launch. Featured in a Sri Lankan tech newsletter, driving organic growth with zero marketing spend.",
-      "tags": ["Next.js", "GitHub API", "TypeScript", "Chart.js", "Supabase"],
-      "image": "/assets/about_me_image.png",
-      "github": "https://github.com/yourusername/devpulse",
-      "live": "https://devpulse.app",
-      "accent": "#F59E0B"
-    }
-  ],
+  {
+    "id": 1,
+    "title": "MediCare",
+    "description": "An AI-enabled smart healthcare and telemedicine platform built on a microservices architecture. Supports doctor appointments, video consultations, AI symptom checking, and payments — fully containerized and cloud-ready.",
+    "myRole": "Built the Doctor Service and Telemedicine Service. Handled doctor registration, specialty management, and secure video session token generation using Agora RTC enabling real-time video consultations between doctors and patients.",
+    "impact": "Enabled the core clinical workflow, without the Doctor Service and Telemedicine Service, doctors couldn't be onboarded and patients couldn't have video consultations. Agora RTC integration brought real-time, low-latency video into a production microservices environment.",
+    "tags": ["React", "Node.js", "MongoDB","Stripe","Gemini API", "Docker", "Kubernetes", "Agora RTC"],
+    "image": "/assets/medi_care.png",
+    "github": "https://github.com/Y3S2-SE/smart-healthcare-platform.git",
+    "live": null,
+    "accent": "#5227FF"
+  },
+  {
+    "id": 2,
+    "title": "MoneyMentor",
+    "description": "A gamified savings coach web app designed for low-income youth. Features financial tracking, XP-based leveling, achievement badges, a knowledge hub with quizzes, and an AI financial advisor powered by Gemini.",
+    "myRole": "Owned the Group & Chat module, built a real-time WebSocket chat system with JWT ticket auth, room management, soft-delete messaging, link previews, and badge sharing into group chats. Also handled unit and integration testing with Jest.",
+"impact": "Gave the platform its social layer. The real-time group chat turned MoneyMentor from a solo tool into a community, members could share badges, celebrate milestones, and keep each other accountable.",
+    "tags": ["React", "Node.js", "MongoDB", "WebSockets", "Redux", "Tailwind CSS", "Jest", "Gemini API"],
+    "image": "/assets/money_mentor.png",
+    "github": "https://github.com/Y3S2-SE/money-mentor.git",
+    "live": "https://money-mentor-v1.vercel.app/",
+    "accent": "#8B5CF6"
+  },
+  {
+    "id": 3,
+    "title": "SafeCert",
+    "description": "A mobile safety training and certification platform for industrial workers. Supports multi-language content (English, Sinhala, Tamil), AI-powered quizzes, text-to-speech, GPS incident reporting, and verified digital certificates.",
+    "myRole": "Built the digital certification system, handling certificate generation with pdf-lib, secure storage via Cloudinary and Firebase, and multi-language certificate issuance when users complete a course.",
+"impact": "Made course completion tangible. The certification system gave workers a verified, shareable proof of their training — the thing that makes the entire learning journey mean something in a real workplace.",
+    "tags": ["React Native", "Expo", "Firebase", "Cloudinary", "pdf-lib", "Gemini API", "TypeScript"],
+    "image": "/assets/safe_cert.png",
+    "github": "https://github.com/Y3S1Group/safecert_app.git",
+    "live": null,
+    "accent": "#FF9FFC"
+  },
+  {
+    "id": 4,
+    "title": "CeylonTrails",
+    "description": "A MERN stack travel companion platform where users can document, share, and discover travel experiences across Sri Lanka. Features interactive maps, post discovery, comments, and voting.",
+    "myRole": "Built the full authentication system - registration, login, JWT-based session management, profile management, and admin controls. Also developed the like/dislike and content engagement features.",
+"impact": "Secured the entire platform. Auth was the gate every user passed through, and the like/dislike system drove the content ranking that determined what others discovered.",
+    "tags": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Leaflet", "Framer Motion"],
+    "image": "/assets/ceylon_trails.png",
+    "github": "https://github.com/Y3S1Group/ceylon_trails.git",
+    "live": null,
+    "accent": "#06B6D4"
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Website",
+    "description": "My personal developer portfolio built with Next.js, Three.js, and Framer Motion. Features a 3D dot-matrix globe with Sri Lanka highlighted, glassmorphism aesthetics, scroll snapping, and a working contact form via EmailJS.",
+    "myRole": "Designed and built everything from scratch — the 3D globe, all section components, animations, and the contact API route.",
+"impact": "A single place that represents who I am as a developer and how I think about building.",
+    "tags": ["Next.js", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
+    "image": "/assets/portfolio.png",
+    "github": "https://github.com/hiruvindajayashanka2001/portfolio.git",
+    "live": null,
+    "accent": "#F59E0B"
+  }
+],
   "nav": ["Home", "About", "Projects", "Contacts"]
 }
